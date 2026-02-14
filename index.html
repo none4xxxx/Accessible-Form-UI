@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asma - Junior Frontend Developer</title>
+    <meta name="description" content="Professional CV of a Junior Frontend Developer specializing in HTML, CSS, and JavaScript.">
+    
+    <meta property="og:title" content="Asma - Junior Frontend Developer">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+<div class="profile-card">
+  <section class="form-section">
+    <form>
+      <div class="input-group">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" placeholder="What should we call you?" aria-required="true">
+      </div>
+
+      <div class="input-group error">
+        <label for="email">Email</label>
+        <input type="email" id="email" value="john@doe.com" aria-invalid="true" aria-describedby="email-error">
+        <span id="email-error" class="error-msg">Email is already taken</span>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Enter Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="password" value="password123">
+          <button type="button" class="toggle-password" aria-label="Show password">
+            <span class="eye-icon">👁️</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label for="confirm-password">Confirm Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="confirm-password" value="password123">
+          <button type="button" class="toggle-password" aria-label="Show password">
+            <span class="eye-icon">👁️</span>
+          </button>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn">Update Profile</button>
+    </form>
+  </section>
+
+  <aside class="status-section">
+    <div class="progress-container">
+      <div class="progress-circle" style="--percent: 65%;">
+        <span class="percent-text">65%</span>
+      </div>
+      <h3>Profile Completeness</h3>
+    </div>
+
+    <div class="checklist-card">
+      <ul class="checklist">
+        <li class="completed">Create Account</li>
+        <li class="completed">Update Roadmap Progress</li>
+        <li class="completed">Setup Public Profile</li>
+        <li>Complete your first project</li>
+        <li>Invite your Friends</li>
+      </ul>
+    </div>
+  </aside>
+</div>
+    </body>
+</html>
